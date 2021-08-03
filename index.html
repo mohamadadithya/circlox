@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@0ac23ca/css/all.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
   <div class="container">
@@ -29,35 +30,39 @@
       <h2 class="title">Diameter</h2>
       <p class="subtitle">Diameter of a Circle.</p>
       <form>
-        <input type="number" placeholder="Enter your value" class="diameter-input">
+        <input type="number" placeholder="Enter the radius value" class="diameter-input">
       </form>
       <button class="btn-answer" onclick="diameterCalc()">Get Answer</button>
-      <button class="btn-close">X</button>
+      <button class="btn-close"><i class="far fa-arrow-right"></i></button>
     </div>
   </section>
   <section class="formula container" id="circumference">
     <div class="circumference">
       <h2 class="title">Circumference</h2>
-      <p class="subtitle">Circumference of a Circle</p>
+      <p class="subtitle">Circumference of a Circle.</p>
       <form>
-        <input type="number" placeholder="Enter your value" class="circum-input">
+        <input type="number" placeholder="Enter the radius value" class="circum-input">
       </form>
       <button class="btn-answer" onclick="circumCalc()">Get Answer</button>
-      <button class="btn-close">X</button>
+      <button class="btn-close"><i class="far fa-arrow-right"></i></button>
     </div>
   </section>
   <section class="formula container" id="area">
     <div class="area">
       <h2 class="title">Area</h2>
-      <p class="subtitle">Area of a Circle</p>
+      <p class="subtitle">Area of a Circle.</p>
       <form>
-        <input type="number" placeholder="Enter your value" class="area-input">
+        <input type="number" placeholder="Enter the radius value" class="area-input">
       </form>
       <button class="btn-answer" onclick="areaCalc()">Get Answer</button>
-      <button class="btn-close">X</button>
+      <button class="btn-close"><i class="far fa-arrow-right"></i></button>
     </div>
   </section>
-  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <div class="result-box">
+    <h3 class="title">Result</h3>
+    <p class="result"></p>
+    <button class="btn-ok">Ok</button>
+  </div>
   <script src="/assets/app.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
