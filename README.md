@@ -1,2 +1,2 @@
 # circlox
-Circle formulas web.
+Circle formulas web app.
