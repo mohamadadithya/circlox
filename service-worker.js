@@ -3,6 +3,8 @@ const toCache = [
     '/',
     'assets/css/main.css',
     'assets/js/app.js',
+    'assets/fonts/Poppins-Light.ttf',
+    'assets/fonts/Poppins-Medium.ttf',
     'assets/js/web.webmanifest',
     'assets/js/register.js',
     'assets/icons/icon.png',
