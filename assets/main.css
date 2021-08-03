@@ -1,7 +1,21 @@
 /* Copyright 2021 by Mohamad Adithya */
+@font-face {
+	font-family: 'Poppins-Light';
+	src: url('./fonts/Poppins-Light.ttf');
+	src: url('./fonts/Poppins-Light.ttf') format('ttf'),
+	     url('./fonts/Poppins-Light.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Poppins-Medium';
+	src: url('./fonts/Poppins-Medium.ttf');
+	src: url('./fonts/Poppins-Medium.ttf') format('ttf'),
+	     url('./fonts/Poppins-Medium.ttf') format('truetype');
+}
+
 :root {
   font-size: 14px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins-Light', sans-serif;
 }
 
 * {
@@ -29,6 +43,7 @@ a {
 }
 
 .logo {
+  font-family: 'Poppins-Medium', sans-serif;
   font-size: 2.3rem;
 }
 
@@ -70,6 +85,7 @@ a {
 
 .formula .title {
   font-size: 2.2rem;
+  font-family: 'Poppins-Medium', sans-serif;
 }
 
 .formula input {
