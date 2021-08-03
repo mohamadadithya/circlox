@@ -1,3 +1,4 @@
+/* Copyright 2021 by Mohamad Adithya */
 :root {
   font-size: 14px;
   font-family: 'Poppins', sans-serif;
@@ -50,7 +51,7 @@ a {
 }
 
 .btn:active {
-  transform: scale(.93);
+  transform: scale(.92);
 }
 
 .formula {
@@ -95,10 +96,6 @@ a {
   transition: .2s;
 }
 
-.formula .btn-answer:active {
-  transform: scale(.93);
-}
-
 .formula .btn-close {
   position: absolute;
   top: 10px;
@@ -129,7 +126,7 @@ a {
   background-color: white;
   border: 2px solid black;
   width: 90%;
-  padding: 1.5em;
+  padding: 2em;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -165,8 +162,10 @@ a {
   transition: .2s;
 }
 
-.result-box .btn-ok:active {
-  transform: scale(.92);
+.copyright-text {
+  font-size: 10px;
+  color: gray;
+  margin-top: 12px;
 }
 
 .grid {
@@ -175,10 +174,11 @@ a {
 
 .col-2 {
   grid-template-columns: repeat(2, 1fr);
-  gap: 5px;
-  margin-bottom: 5px;
+  gap: 8px;
+  margin-bottom: 8px;
 }
 
 .col-1 {
   grid-template-columns: 1fr;
 }
+/* Copyright 2021 by Mohamad Adithya */
