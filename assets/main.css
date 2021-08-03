@@ -109,12 +109,27 @@ a {
   border-radius: 5px;
 }
 
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .3);
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  z-index: -1;
+  transition: .4s;
+}
+
+.overlay.active {
+  opacity: 1;
+  z-index: 1;
+}
+
 .result-box {
   background-color: white;
   border: 2px solid black;
-  height: 40%;
   width: 90%;
-  padding: 3em;
+  padding: 1.3em;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -124,6 +139,7 @@ a {
   opacity: 0;
   pointer-events: none;
   transition: .4s;
+  z-index: 2;
 }
 
 .result-box.active {
@@ -137,7 +153,7 @@ a {
 }
 
 .result-box .result {
-  margin-bottom: 20px;
+  margin-bottom: 1em;
 }
 
 .result-box .btn-ok {

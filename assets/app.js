@@ -6,8 +6,10 @@ const diameterForm = document.getElementById('diameter')
 const circumForm = document.getElementById('circumference')
 const areaForm = document.getElementById('area')
 const resultBox = document.querySelector('.result-box')
+
 const resultBoxText = document.querySelector('.result-box .result')
 const resultBoxButton = document.querySelector('.result-box .btn-ok')
+const resultBoxOverlay = document.querySelector('.overlay')
 
 const closeButton = document.querySelectorAll('.btn-close')
 const formulaForm = document.querySelectorAll('.formula')
@@ -43,6 +45,7 @@ function diameterCalc() {
     let calc = 2 * value
     let result = parseFloat(calc)
     resultBox.classList.add('active')
+    resultBoxOverlay.classList.add('active')
     resultBoxText.innerHTML = `D = 2 x r <br> = 2 x ${value} <br> = ${result}`
     diameterInput.value = ''
   }
@@ -58,6 +61,7 @@ function circumCalc() {
     let calc = 2 * 3.14 * value
     let result = parseFloat(calc)
     resultBox.classList.add('active')
+    resultBoxOverlay.classList.add('active')
     resultBoxText.innerHTML = `C = 2 x π x r <br> = 2 x 3.14 x ${value} <br> = ${result}`
     circumInput.value = ''
   }
@@ -73,11 +77,13 @@ function areaCalc() {
    let calc = 3.14 * value * value
    let result = parseFloat(calc)
    resultBox.classList.add('active')
-    resultBoxText.innerHTML = `A = π x r² <br> = 3.14 x ${value} x ${value} <br> = ${result}`
+   resultBoxOverlay.classList.add('active')
+   resultBoxText.innerHTML = `A = π x r² <br> = 3.14 x ${value} x ${value} <br> = ${result}`
    areaInput.value = ''
  }
 }
 
 resultBoxButton.addEventListener('click', () => {
   resultBox.classList.remove('active')
+  resultBoxOverlay.classList.remove('active')
 })
