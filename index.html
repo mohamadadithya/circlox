@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Circlox</title>
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+   <div>
+    <h1 class="logo">Circlox</h1>
+    <p class="info">Circle formulas in one app, no reload.<br /> Select the formula you wanna uses.</p>
+    <div class="grid col-2">
+      <button type="button" class="btn" id="btn-diameter">Diameter</button>
+      <button type="button" class="btn" id="btn-circum">Circumference</button>
+    </div>
+    <div class="grid col-1">
+      <button type="button" class="btn" id="btn-area">Area</button>
+    </div>
+   </div>
+  </div>
+  <section class="formula container" id="diameter">
+    <div class="diameter">
+      <h2 class="title">Diameter</h2>
+      <p class="subtitle">Diameter of a Circle.</p>
+      <form>
+        <input type="number" placeholder="Enter your value" class="diameter-input">
+      </form>
+      <button class="btn-answer" onclick="diameterCalc()">Get Answer</button>
+      <button class="btn-close">X</button>
+    </div>
+  </section>
+  <section class="formula container" id="circumference">
+    <div class="circumference">
+      <h2 class="title">Circumference</h2>
+      <p class="subtitle">Circumference of a Circle</p>
+      <form>
+        <input type="number" placeholder="Enter your value" class="circum-input">
+      </form>
+      <button class="btn-answer" onclick="circumCalc()">Get Answer</button>
+      <button class="btn-close">X</button>
+    </div>
+  </section>
+  <section class="formula container" id="area">
+    <div class="area">
+      <h2 class="title">Area</h2>
+      <p class="subtitle">Area of a Circle</p>
+      <form>
+        <input type="number" placeholder="Enter your value" class="area-input">
+      </form>
+      <button class="btn-answer" onclick="areaCalc()">Get Answer</button>
+      <button class="btn-close">X</button>
+    </div>
+  </section>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="/assets/app.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
