@@ -13,6 +13,10 @@
   border: none;
 }
 
+body {
+  position: relative;
+}
+
 a {
   text-decoration: none;
 }
@@ -99,10 +103,54 @@ a {
   position: absolute;
   top: 10px;
   right: 10px;
-  padding: .6em .8em;
-  background-color: red;
+  padding: .6em 1em;
+  background-color: black;
   color: white;
   border-radius: 5px;
+}
+
+.result-box {
+  background-color: white;
+  border: 2px solid black;
+  height: 40%;
+  width: 90%;
+  padding: 3em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: .4s;
+}
+
+.result-box.active {
+  display: unset;
+  opacity: 1;
+  pointer-events: all;
+}
+
+.result-box .title {
+  font-size: 2rem;
+}
+
+.result-box .result {
+  margin-bottom: 20px;
+}
+
+.result-box .btn-ok {
+  padding: .6em 2em;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: .2s;
+}
+
+.result-box .btn-ok:active {
+  transform: scale(.92);
 }
 
 .grid {
