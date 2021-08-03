@@ -1,0 +1,16 @@
+{
+    "name": "Circlox",
+    "short_name": "Circlox",
+    "description": "Circle formulas in one app, no reload.",
+    "icons": [
+        {
+            "src": "../icons/icon.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/",
+    "display": "fullscreen",
+    "theme_color": "#0d0072",
+    "background_color": "#0d0072"
+}
