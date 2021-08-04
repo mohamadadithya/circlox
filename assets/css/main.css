@@ -16,6 +16,7 @@
 :root {
   font-size: 14px;
   font-family: 'Poppins-Light', sans-serif;
+  --fontBold: 'Poppins-Medium', sans-serif;
 }
 
 * {
@@ -43,7 +44,7 @@ a {
 }
 
 .logo {
-  font-family: 'Poppins-Medium', sans-serif;
+  font-family: var(--fontBold);
   font-size: 2.3rem;
 }
 
@@ -85,7 +86,7 @@ a {
 
 .formula .title {
   font-size: 2.2rem;
-  font-family: 'Poppins-Medium', sans-serif;
+  font-family: var(--fontBold);
 }
 
 .formula input {
@@ -163,6 +164,7 @@ a {
 
 .result-box .title {
   font-size: 2rem;
+  font-family: var(--fontBold);
 }
 
 .result-box .result {
