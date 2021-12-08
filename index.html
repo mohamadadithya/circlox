@@ -1,6 +1,7 @@
 <!-- Copyright 2021 by Mohamad Adithya -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +15,7 @@
   <meta name="author" content="Mohamad Adithya">
   <meta name="google-site-verification" content="m4k8dvzsRr2cACjrTnp64lG6FjYsPqjL6ciL-xETHrU" />
   <!-- PWA -->
-  <meta name="theme-color" content="#0d0072"/>
+  <meta name="theme-color" content="#0d0072" />
   <link rel="manifest" href="/assets/js/web.webmanifest">
   <link rel="apple-touch-icon" href="/assets/icons/icon.png">
   <!-- End of PWA -->
@@ -24,54 +25,55 @@
   <link rel="stylesheet" href="/assets/css/main.min.css">
   <link rel="stylesheet" href="/assets/css/all.min.css">
 </head>
+
 <body>
   <div class="container">
-   <div>
-    <h1 class="logo">Circlox</h1>
-    <p class="info">Circle formulas in one app, no reload.<br /> Select the formula you wanna uses.</p>
-    <div class="grid col-2">
-      <button type="button" class="btn" id="btn-diameter">Diameter</button>
-      <button type="button" class="btn" id="btn-circum">Circumference</button>
+    <div>
+      <h1 class="logo">Circlox</h1>
+      <p class="info">Circle formulas in one app, no reload.<br /> Select the formula you wanna uses.</p>
+      <div class="grid col-2">
+        <button type="button" class="btn" id="btn-diameter">Diameter</button>
+        <button type="button" class="btn" id="btn-circum">Circumference</button>
+      </div>
+      <div class="grid col-1">
+        <button type="button" class="btn" id="btn-area">Area</button>
+      </div>
+      <p class="copyright-text">&copy; 2021 by Mohamad Adithya</p>
     </div>
-    <div class="grid col-1">
-      <button type="button" class="btn" id="btn-area">Area</button>
-    </div>
-    <p class="copyright-text">&copy; 2021 by Mohamad Adithya</p>
-   </div>
   </div>
-  <section class="formula container" id="diameter">
+  <form class="formula container" id="diameter">
     <div class="diameter">
       <h2 class="title">Diameter</h2>
       <p class="subtitle">Diameter of a Circle.</p>
       <div>
         <input type="number" placeholder="Enter the radius value" class="diameter-input">
       </div>
-      <button class="btn btn-answer" onclick="diameterCalc()">Get Result</button>
+      <button type="submit" class="btn btn-answer">Get Result</button>
       <button class="btn btn-close"><i class="fas fa-arrow-right"></i></button>
     </div>
-  </section>
-  <section class="formula container" id="circumference">
+  </form>
+  <form class="formula container" id="circumference">
     <div class="circumference">
       <h2 class="title">Circumference</h2>
       <p class="subtitle">Circumference of a Circle.</p>
       <div>
         <input type="number" placeholder="Enter the radius value" class="circum-input">
       </div>
-      <button class="btn btn-answer" onclick="circumCalc()">Get Result</button>
+      <button type="submit" class="btn btn-answer">Get Result</button>
       <button class="btn btn-close"><i class="fas fa-arrow-right"></i></button>
     </div>
-  </section>
-  <section class="formula container" id="area">
+  </form>
+  <form class="formula container" id="area">
     <div class="area">
       <h2 class="title">Area</h2>
       <p class="subtitle">Area of a Circle.</p>
       <div>
         <input type="number" placeholder="Enter the radius value" class="area-input">
       </div>
-      <button class="btn btn-answer" onclick="areaCalc()">Get Result</button>
+      <button type="submit" class="btn btn-answer">Get Result</button>
       <button class="btn btn-close"><i class="fas fa-arrow-right"></i></button>
     </div>
-  </section>
+  </form>
   <div class="overlay"></div>
   <div class="result-box">
     <h3 class="title">Result</h3>
@@ -79,7 +81,8 @@
     <button class="btn btn-ok">Ok</button>
   </div>
   <script src="/assets/js/register.js" type="text/javascript" charset="utf-8"></script>
-  <script src="/assets/js/app.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/app.js" type="text/javascript" charset="utf-8"></script>
 </body>
+
 </html>
 <!-- Copyright 2021 by Mohamad Adithya -->

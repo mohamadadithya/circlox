@@ -36,7 +36,8 @@ closeButton.forEach((button) => {
 })
 
 /* Calculation */
-function diameterCalc() {
+function diameterCalc(e) {
+  e.preventDefault()
   const diameterInput = document.querySelector('.diameter-input')
   let value = diameterInput.value
   if(value.length === 0) {
@@ -52,7 +53,8 @@ function diameterCalc() {
   }
 }
 
-function circumCalc() {
+function circumCalc(e) {
+  e.preventDefault()
   const circumInput = document.querySelector('.circum-input')
   let value = circumInput.value
   if(value.length === 0) {
@@ -68,7 +70,8 @@ function circumCalc() {
   }
 }
 
-function areaCalc() {
+function areaCalc(e) {
+  e.preventDefault()
  const areaInput = document.querySelector('.area-input')
  let value = areaInput.value
  if(value.length === 0) {
@@ -83,6 +86,10 @@ function areaCalc() {
    areaInput.value = ''
  }
 }
+
+diameterForm.addEventListener('submit', diameterCalc)
+circumForm.addEventListener('submit', circumCalc)
+areaForm.addEventListener('submit', areaCalc)
 
 resultBoxButton.addEventListener('click', () => {
   resultBox.classList.remove('active')
